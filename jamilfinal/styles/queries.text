@@ -1,0 +1,3 @@
+
+//products which are not available in the carts
+SELECT products.* FROM products LEFT JOIN carts ON products.id = carts.productid WHERE carts.id IS NULL
